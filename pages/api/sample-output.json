@@ -1,0 +1,61 @@
+[{
+    "index": 0,
+    "time": "01/01/2020",
+    "graph": {
+        "keywords": "N/A",
+        "encrypted": "Genesis Block",
+        "pubKey": "N/A",
+        "privKey": "N/A",
+        "validity": "Mined! Chain is Valid!"
+    },
+    "keywords": "pathogenic",
+    "prev": "0",
+    "hash": "a5984ecf5e62100164676af8b039f648f21852333aceeb09d99019cc0ec828ec",
+    "nonce": 0
+},
+{
+    "index": 1,
+    "time": "02/06/2022",
+    "graph": {
+        "keywords": "pathogenic",
+        "encrypted": "58ce492a2cf45e33797be29efd1766b6ae51f10f0ca4ea3642d46c0b1e411e48ee6c550e766a980ad7b3dd5508772360e4254b9efc6df3c8612ca3de86f61e1bfce3bd46427227908c095147e77fe835f4f6b0e4d6cc72bb589eb20aaae41971a254477b3539d22bf7b8de44eba0ff4f69641d79873502858c5a12e481101f315b1c57ed36b7b15218035515f41083faced9ef8435c322ddf507f645243aeefb022afa5a173e8370a9eadc51c296574e4fffb217e96788372b85b5c72640f807c5e699abcc9475f5befe7fccb928a9ed31842cc79a0192fb8fe933b8cb007bedf3e5cc3678f261a8e1ef250e5e64baeba86348f37653f0f1053d9146e47dd5fe",
+        "pubKey": 451,
+        "privKey": 1704,
+        "validity": "Mined! Chain is Valid!"
+    },
+    "keywords": "pathogenic",
+    "prev": "a5984ecf5e62100164676af8b039f648f21852333aceeb09d99019cc0ec828ec",
+    "hash": "0000563897e8c96e4e1d132d41ef7a61346f5e3c36aa96527eb9c3bcf301d0ae",
+    "nonce": 66235
+},
+{
+    "index": 2,
+    "time": "02/06/2022",
+    "graph": {
+        "keywords": "heterozygous",
+        "encrypted": "4e3cc981a4e98bf4a5815d3bf5402116bf8f1aeccd6126e052e38ef2a38c1d89479243585943915b674560107fc749791defdfd7ab52b4cb0a255b3b2afb3ec0b49d4eec2f320deb69e791df96dedaf3f9eae14c4b7e4bca68abe65c3142b25dcd21fc5e68812cbd2d5895e7def73b08f167bfb5d1e8089ae3b6d1d3ed5e487cf4708a9e387c0ad84395e86943f61ca64b8c781b2dd18eb445859d632a21964435d037e6f54a6cfd787c13cdb0cb804349f17e3ed64ccfc15b087eb67af44372d310b62daaa8549f1db6af405ae8c5ddb9135028faffd8c2b199fcb8146baac1cbac0f07f1a4dee1c0b854eaf7895ad77630c818a50dec75aa969fbb6d5c8dcc",
+        "pubKey": 451,
+        "privKey": 1704,
+        "validity": "Mined! Chain is Valid!"
+    },
+    "keywords": "pathogenic",
+    "prev": "0000563897e8c96e4e1d132d41ef7a61346f5e3c36aa96527eb9c3bcf301d0ae",
+    "hash": "0000230ae9d77c675d997a610a23a45d212c0a5735895f1382b7494fd34469d8",
+    "nonce": 84741
+},
+{
+    "index": 3,
+    "time": "02/06/2022",
+    "graph": {
+        "keywords": "autosomal",
+        "encrypted": "412545480789aab9939eee3d54c2a8b92b810e8e42dcdc884905d609cee08dee7e81c23cb58cca313bfecb256b9813a895bf4aa20acc7d64cf52cd6c1ad87935682b997f1da37c1898ba09a7f095f15fc729f3b317d709f65f8c5c988dc183d0698a53c979e74a04accc6fe821aa5d7f597d3c6cade6f8ba4d27f780755fd631d0c5e843f93fad6f632c9fd54b3ffed05bd9352df29e268100d24a609fcfcb6cfe2b303b71a482f28540c165e5f6158ecbee0ccca090206fbe03602a7172e632cf563e6e4b02ef398bfc1b511c4a4aca2337aaa94bfdd53239806b8a3a52b1ad90ed92d855772940d0c39c13ce482ceb5e3df363258454e07bf68bd972922627",
+        "pubKey": 451,
+        "privKey": 1704,
+        "validity": "Mined! Chain is Valid!"
+    },
+    "keywords": "pathogenic",
+    "prev": "0000230ae9d77c675d997a610a23a45d212c0a5735895f1382b7494fd34469d8",
+    "hash": "00007acfc0b7654a9a09ffb582c5d790c136094a79ea16cdd60c64666fad371c",
+    "nonce": 102612
+}
+]
