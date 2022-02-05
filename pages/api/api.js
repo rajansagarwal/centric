@@ -63,12 +63,12 @@ let datum = new Protocol();
 console.log("mining... ");
 datum.add(
 	new Hash(1, "01/06/2020", {
-		sender: "Fiona Hacksworth",
-		recipient: "Rajan Agarwal",
-		quantity: 50
+		quantity: 50,
+		message: '',
+		gene: '',
 	})
 );
-// hackercoin.protocol[1].data.quantity = 1000;
+
 console.log(datum.validity());
 console.log(JSON.stringify(datum, null, 5));
 

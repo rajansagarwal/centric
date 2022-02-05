@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
     <h2>Datum Health 🕊</h2>
     <p style={{ lineHeight: 'auto' }}>
-      <Link href="/dashboard" passHref>
-      <u>Sign in with MetaMask</u>
-      </Link>
+    <u><Link href="/chain" passHref>
+      Sign in with MetaMask
+      </Link></u>
       </p>
     <p
     style={{ lineHeight: 'auto' }}

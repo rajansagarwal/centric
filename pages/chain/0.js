@@ -1,10 +1,11 @@
 import Head from "next/head";
 import { useMoralis } from "react-moralis";
-import styles from "../styles/Home.module.css";
-import './api/api.js';
+import styles from "../../styles/Home.module.css";
+import '../api/api.js';
+import Link from 'next/link';
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://datum-api.rajnagrwl.repl.co/index.json');
+  const res = await fetch('https://datum-api.rajnagrwl.repl.co/0.json');
   const data = await res.json();
 
   return { 
@@ -18,19 +19,18 @@ export default function Home({ graph }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Datum Health</title>
+        <title>Block 0 Details</title>
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h2>Datum Health</h2>
-    <p>Please ensure that you are on the Ethereum Mainnet.</p>
+    <h2>Block 0 Details</h2>
+    <p>Only Visible when Signed In.</p>
 
       {isAuthenticated ? (
         <>
           <button onClick={logout}>Logout</button>
           <h2>Welcome, {user.get("username")}</h2>
           <h2>Your wallet address is: {user.get("ethAddress")}</h2>
-          <h2>Your wallet address is: {user.get("ethBalance")}</h2>
           <div>
             {graph.map(graphical => (
                 <div key={graphical.index}>
