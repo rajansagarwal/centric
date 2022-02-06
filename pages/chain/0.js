@@ -5,7 +5,7 @@ import '../api/api.js';
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://datum-api.rajnagrwl.repl.co/0.json');
+  const res = await fetch('https://bloomnetwork-api.vercel.app/0.json');
   const data = await res.json();
 
   return { 
@@ -29,8 +29,8 @@ export default function Home({ graph }) {
       {isAuthenticated ? (
         <>
           <button onClick={logout}>Logout</button>
-          <h2>Welcome, {user.get("username")}</h2>
-          <h2>Your wallet address is: {user.get("ethAddress")}</h2>
+          <p><b>Username:</b> {user.get("username")}</p>
+          <p><b>Wallet Address:</b> {user.get("ethAddress")}</p><hr/>
           <div>
             {graph.map(graphical => (
                 <div key={graphical.index}>
@@ -40,6 +40,7 @@ export default function Home({ graph }) {
                   Keywords: {graphical.graph.keywords}<br/><br/>
                   Validity: {graphical.graph.validity}<br/><br/>
                   Single-Use Identifier: {graphical.nonce}<br/><br/>
+                  The genesis block cannot be revoked. Detail & ownership applies to all following index.
                 </div>
             ))}
         </div>

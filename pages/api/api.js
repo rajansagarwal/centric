@@ -59,9 +59,9 @@ class Protocol {
 	}
 }
 
-let datum = new Protocol();
+let bloom = new Protocol();
 console.log("mining... ");
-datum.add(
+bloom.add(
 	new Hash(1, "01/06/2020", {
 		quantity: 50,
 		message: '',
@@ -69,6 +69,6 @@ datum.add(
 	})
 );
 
-console.log(datum.validity());
-console.log(JSON.stringify(datum, null, 5));
+console.log(bloom.validity());
+console.log(JSON.stringify(bloom, null, 5));
 

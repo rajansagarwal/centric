@@ -5,7 +5,7 @@ import '../api/api.js';
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://bloomnetwork-api.vercel.app/2.json');
+  const res = await fetch('https://bloomnetwork-api.vercel.app/5.json');
   const data = await res.json();
 
   return { 
@@ -19,11 +19,11 @@ export default function Home({ graph }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Block 2 Details</title>
+        <title>Block 5 Details</title>
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h2>Block 2 Details</h2>
+    <h2>Block 5 Details</h2>
     <p>Ensure Metamask is installed.</p>
 
       {isAuthenticated ? (
@@ -33,7 +33,7 @@ export default function Home({ graph }) {
           <p><b>Wallet Address:</b> {user.get("ethAddress")}</p><hr/>
           <br/>
           <h3>Scanned EHR</h3>
-          <img src="https://bloomnetwork-api.vercel.app/second.png" width="500px"/>
+          <img src="https://bloomnetwork-api.vercel.app/fifth.png" width="500px"/>
           <br/><br/>
           <div>
             {graph.map(graphical => (

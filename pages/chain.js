@@ -5,7 +5,7 @@ import './api/api.js';
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://datum-api.rajnagrwl.repl.co/index.json');
+  const res = await fetch('https://bloomnetwork-api.vercel.app/index.json');
   const data = await res.json();
 
   return { 
@@ -23,7 +23,7 @@ export default function Home({ graph }) {
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h2>Welcome to Datum Health</h2>
+    <h2>Welcome to The Bloom Network 🌸</h2>
     <p>Please ensure that you are on the Ethereum Mainnet.</p>
 
       {isAuthenticated ? (
@@ -40,7 +40,7 @@ export default function Home({ graph }) {
                   Keywords: {graphical.graph.keywords}<br/><br/>
                   Validity: {graphical.graph.validity}<br/><br/>
                   Single-Use Identifier: {graphical.nonce}<br/><br/>
-                  <u><Link href={`chain/${graphical.index}`}>View Details</Link></u>
+                  <u><Link href={`chain/${graphical.index}`}>View Details</Link></u><br/><br/>
                 </div>
             ))}
         </div><br/><br/>
@@ -55,7 +55,7 @@ export default function Home({ graph }) {
           Sign in with MetaMask
         </button>
       )}
-      <iframe src="//datum-api.rajnagrwl.repl.co" height="700px" width="700px" frameBorder='0'/><br/>View NLP Connections & Data Matrix<br/><br/><br/><br/>
+      <iframe src="//datum-api.vercel.app" height="700px" width="700px" frameBorder='0'/><br/>View NLP Connections & Data Matrix<br/><br/><br/><br/>
     </div> 
   );
 }
