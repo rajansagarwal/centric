@@ -29,7 +29,7 @@ export default function Home() {
     <h3>Interacting with the chain</h3>
     <p style={{ lineHeight: '30px' }}>The chain lives on a lil&#39; server with functions to add and encrypt any information that is added. Information is sent to a custom API, that interacts with the web app. This dynamically adds new blocks to the chain, and consistently verifies its validity. While information cannot be removed, users can choose to remove their publicKeyt that encrypts the data. This means that data exists on-chain, but can only be accessed once approved.</p>
     <br/>
-    - <Link href="https://heyrajan.com">rajan</Link>
+    - <Link href="https://heyrajan.com">rajan</Link>, <Link href="https://github.com/rajanwastaken/bloom">oss</Link>
     </div> 
   );
 }
