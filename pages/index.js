@@ -18,7 +18,7 @@ export default function Home() {
       </p>
     <p
     style={{ lineHeight: 'auto' }}
-    >Restoring the power to the people. Ownership & control of medical data is not a privelage, it&#39;s our right.</p><br/>
+    >Restoring the power to the people. Ownership & control of medical data is not a privilege, it&#39;s our right.</p><br/>
 
 <h3>The Vision</h3>
     <p style={{ lineHeight: '30px' }}>Medical data shouldn&#39;t be stored in 14 different databases across a community, it should be <b>decentralized and owned by the patients.</b> Medical specialists and ER Physicians should have access to the same fundamental data, which contributes to the idea of efficient and effective workflows. On the Bloom Network, data is decentralized at the discretion of patients, allowing them to publish their data in return for a token: $BLOOM. </p>
