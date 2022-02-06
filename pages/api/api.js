@@ -81,7 +81,7 @@ const { privateKey, publicKey } = generateKeyPairSync('rsa', {
 const EGFR = 'EGFR';
 const KCNQ1 = 'KCNQ1';
 const CYPD26 = 'CYPD26';
-let datum = new Protocol();
+let bloom = new Protocol();
 
 const encryptedData1 = publicEncrypt(
 	publicKey,
@@ -115,76 +115,76 @@ const decryptedData3 = privateDecrypt(
 	encryptedData3
 );
 
-datum.add(
+bloom.add(
 	new Hash(1, "02/06/2022", {
 		keywords: keywords[0],
 		encrypted: encryptedData1.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(2, "02/06/2022", {
 		keywords: keywords[1],
 		encrypted: encryptedData2.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(3, "02/06/2022", {
 		keywords: keywords[2],
 		encrypted: encryptedData3.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(4, "02/06/2022", {
 		keywords: keywords[2],
 		encrypted: encryptedData3.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(5, "02/06/2022", {
 		keywords: keywords[2],
 		encrypted: encryptedData3.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(6, "02/06/2022", {
 		keywords: keywords[2],
 		encrypted: encryptedData3.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
-datum.add(
+bloom.add(
 	new Hash(7, "02/06/2022", {
 		keywords: keywords[2],
 		encrypted: encryptedData3.toString('hex'),
 		pubKey: publicKey.length,
 		privKey: privateKey.length,
-		validity: datum.validity(),
+		validity: bloom.validity(),
 	})
 );
 
 console.log('Patient Public Key for Data Encryption \n' + publicKey);
 console.log('Doctor Private Key for Data Decryption \n' + privateKey);
-console.log(JSON.stringify(datum, null, 5));
+console.log(JSON.stringify(bloom, null, 5));
