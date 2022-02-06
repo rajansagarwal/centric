@@ -117,6 +117,51 @@ var matches = {
       {"source": "JPKFMudge", "target": "MMACHC1", "value": 2},
       {"source": "MYBPC3", "target": "CACNA1A", "value": 3},
       {"source": "MYBPC3", "target": "PKFM", "value": 3},
+      {"source": "HNF1A", "target": "CFTR3", "value": 3},
+      {"source": "HNF1A", "target": "CLCN", "value": 3},
+      {"source": "HNF1A", "target": "CHEK", "value": 4},
+      {"source": "HNF1A", "target": "HEXA", "value": 4},
+      {"source": "HNF1A", "target": "HLAB27", "value": 4},
+      {"source": "HNF1A", "target": "CALR", "value": 2},
+      {"source": "HNF1A", "target": "CACNA1A", "value": 9},
+      {"source": "KCN2", "target": "HNF1A", "value": 2},
+      {"source": "KCN2", "target": "CACNA1A", "value": 7},
+      {"source": "LDLR", "target": "KCN2", "value": 13},
+      {"source": "LDLR", "target": "HNF1A", "value": 1},
+      {"source": "LDLR", "target": "CACNA1A", "value": 12},
+      {"source": "LHON", "target": "KCN2", "value": 4},
       {"source": "MYBPC3", "target": "MMACHC1", "value": 2}
     ]
   }
+
+  fetch('production.json').then(res => res.json()).then(data => {
+    const Graph = ForceGraph()
+    (document.getElementById('graph'))
+      .graphData(data)
+      .nodeAutoColorBy('group')
+      .onNodeDragEnd(node => {
+        node.fx = node.x;
+        node.fy = node.y;
+      });
+  });
+
+  const commonPropTypes = {
+    width: PropTypes.number,
+    height: PropTypes.number,
+    graphData: PropTypes.shape({
+      nodes: PropTypes.arrayOf(PropTypes.object).isRequired,
+      links: PropTypes.arrayOf(PropTypes.object).isRequired
+    }),
+    backgroundColor: PropTypes.string,
+    nodeRelSize: PropTypes.number,
+    nodeId: PropTypes.string,
+    nodeLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    nodeVal: PropTypes.oneOfType([PropTypes.number, PropTypes.string, PropTypes.func]),
+    nodeVisibility: PropTypes.oneOfType([PropTypes.bool, PropTypes.string, PropTypes.func]),
+    nodeColor: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    nodeAutoColorBy: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    onNodeHover: PropTypes.func,
+    onNodeClick: PropTypes.func,
+    linkSource: PropTypes.string
+  };
+  
