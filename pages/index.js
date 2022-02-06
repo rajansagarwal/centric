@@ -13,7 +13,7 @@ export default function Home() {
     <h2>The Bloom Network 🌸</h2>
     <p style={{ lineHeight: 'auto' }}>
     <u><Link href="/chain" passHref>
-      Sign in with MetaMask
+      Sign in with MetaMask [Ethereum Mainnet]
       </Link></u>
       </p>
     <p
