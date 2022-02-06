@@ -1,4 +1,4 @@
-{
+var matches = {
     "nodes": [
       {"id": "ACTC", "group": 1},
       {"id": "ARSE", "group": 1},
