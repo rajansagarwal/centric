@@ -47,6 +47,7 @@ export default function Home({ graph }) {
                   Single-Use Identifier: {graphical.nonce}<br/><br/>
                   Parsed Text: {graphical.text}<br/><br/>
                   AI Summarized Text: {graphical.summary}<br/><br/>
+                  Identified Gene: {graphical.gene.toUpperCase()}<br/><br/>
                 </div>
             ))}
         </div>
