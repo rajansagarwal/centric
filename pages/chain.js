@@ -55,7 +55,7 @@ export default function Home({ graph }) {
           Sign in with MetaMask
         </button>
       )}
-      <iframe src="//datum-api.vercel.app" height="700px" width="700px" frameBorder='0'/><br/><u><Link href="https://github.com/rajanwastaken/bloom/tree/main/ML-foundation">Wiew NLP Connections & Data Matrix</Link></u><br/><br/><br/><br/>
+      <iframe src="//bloomnetwork-api.vercel.app" height="700px" width="700px" frameBorder='0'/><br/><u><Link href="https://github.com/rajanwastaken/bloom/tree/main/ML-foundation">Wiew NLP Connections & Data Matrix</Link></u><br/><br/><br/><br/>
     </div> 
   );
 }
