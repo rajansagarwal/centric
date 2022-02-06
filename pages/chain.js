@@ -19,7 +19,7 @@ export default function Home({ graph }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Datum Health</title>
+        <title>Bloom Network</title>
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
