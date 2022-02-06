@@ -23,17 +23,17 @@ export default function Home({ graph }) {
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h2>Datum Health</h2>
+    <h2>Welcome to Datum Health</h2>
     <p>Please ensure that you are on the Ethereum Mainnet.</p>
 
       {isAuthenticated ? (
         <>
           <button onClick={logout}>Logout</button>
-          <h2>Welcome, {user.get("username")}</h2>
-          <h2>Your wallet address is: {user.get("ethAddress")}</h2>
+          <p><b>Username:</b> {user.get("username")}</p>
+          <p><b>Wallet Address:</b> {user.get("ethAddress")}</p><hr/>
           <div>
             {graph.map(graphical => (
-                <div key={graphical.index}>
+                 <div key={graphical.index}>
                   <h3>Block: {graphical.index}</h3>
                   Current Hash: {graphical.hash}<br/><br/>
                   Previous Hash: {graphical.prev}<br/><br/>
@@ -43,7 +43,7 @@ export default function Home({ graph }) {
                   <u><Link href={`chain/${graphical.index}`}>View Details</Link></u>
                 </div>
             ))}
-        </div>
+        </div><br/><br/>
         </>
       ) : ( 
         <button
@@ -55,6 +55,7 @@ export default function Home({ graph }) {
           Sign in with MetaMask
         </button>
       )}
+      <iframe src="//datum-api.rajnagrwl.repl.co" height="700px" width="700px" frameBorder='0'/><br/>View NLP Connections & Data Matrix<br/><br/><br/><br/>
     </div> 
   );
 }
