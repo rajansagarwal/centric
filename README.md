@@ -1,5 +1,4 @@
-🌸🌸🌸
-What if patient data could be democratized? Let's restore transparency within bureaucratic medical practices.
+UofT Hacks 2022 / What if patient data could be democratized? Let's restore transparency within bureaucratic medical practices.
 
 ## 💡 Inspiration 
 The fundamental issue with current Electronic Health Records is that they exist in the ownership of completely different practices (ie physicians, specialists, etc...) ~ without universalism, we are left with chronic relativism within medical relations. I was heavily inspired by the idea of universalism, at the discretion of patients.
