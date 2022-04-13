@@ -31,7 +31,7 @@ class Protocol {
 	}
 
 	genesis() {
-		return new Hash(0, "01/01/2020", "you alr know its ya boy genesis on chain", "0");
+		return new Hash(0, "01/01/2020", "Genesis", "0");
 	}
 
 	fetch() {
@@ -62,10 +62,42 @@ class Protocol {
 let bloom = new Protocol();
 console.log("mining... ");
 bloom.add(
-	new Hash(1, "01/06/2020", {
+	new Hash(1, "04/2022", {
 		quantity: 50,
 		message: '',
-		gene: '',
+		gene: 'ARSE',
+	})
+);
+
+bloom.add(
+	new Hash(2, "04/2022", {
+		quantity: 50,
+		message: '',
+		gene: 'IBSP',
+	})
+);
+
+bloom.add(
+	new Hash(3, "04/2022", {
+		quantity: 50,
+		message: '',
+		gene: 'KCNQ1',
+	})
+);
+
+bloom.add(
+	new Hash(4, "04/2022", {
+		quantity: 50,
+		message: '',
+		gene: 'LMNA',
+	})
+);
+
+bloom.add(
+	new Hash(5, "04/2022", {
+		quantity: 50,
+		message: '',
+		gene: 'CYPD26',
 	})
 );
 
