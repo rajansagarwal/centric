@@ -101,6 +101,7 @@ bloom.add(
 	})
 );
 
-console.log(bloom.validity());
-console.log(JSON.stringify(bloom, null, 5));
+export default function handler(req, res) {
+  res.status(200).json({ validity: bloom.validity(), block: JSON.stringify(bloom, null, 5) })
+}
 
