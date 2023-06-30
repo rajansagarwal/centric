@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Restoring deicision-making security & patient privacy through data aggregation and decentralization" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h2>The Bloom Network 🌸</h2>
+    <h2>Centric</h2>
     <p style={{ lineHeight: 'auto' }}>
     <u><Link href="/chain" passHref>
       Sign in with MetaMask [Ethereum Mainnet]
